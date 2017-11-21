@@ -78,5 +78,12 @@ article {
 
   img {
     width: 100%;
+    border: solid 5px;
+    border-image: radial-gradient(
+        farthest-corner at 40px 40px,
+        #f35 0%,
+        #43e 100%
+      )
+      20;
   }
 }
