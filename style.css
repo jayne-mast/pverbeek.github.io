@@ -213,3 +213,8 @@ article {
     width: 100%;
     border: solid 5px;
     border-image: radial-gradient(farthest-corner at 40px 40px, #f35 0%, #43e 100%) 20; }
+
+marquee {
+  font-size: 22px;
+  margin-top: 40px;
+  font-family: 'VT323', monospace; }
