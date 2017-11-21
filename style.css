@@ -211,6 +211,12 @@ h1 :nth-child(40n + 39) {
   @media (min-width: 800px) {
     .grid {
       grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 1200px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 1800px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 
 article {
   position: relative;

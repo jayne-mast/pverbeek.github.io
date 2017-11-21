@@ -84,6 +84,13 @@ h2 {
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1800px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 article {
