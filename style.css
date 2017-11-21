@@ -187,8 +187,14 @@ h1 :nth-child(40n + 39) {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px; }
+  @media (min-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 800px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 article {
   position: relative;
