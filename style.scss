@@ -37,6 +37,11 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
 @for $i from 0 to $count {
   h1 :nth-child(#{$count}n + #{$i}) {
     animation-delay: -#{($count - $i) * 2 * $duration / $count }s;
@@ -47,6 +52,7 @@ h1 {
 
 .grid {
   display: grid;
+  margin: 0 20px;
 
   grid-template-columns: 1fr;
   grid-gap: 10px;
