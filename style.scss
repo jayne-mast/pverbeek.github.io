@@ -1,0 +1,76 @@
+body {
+  background: #d6f5ab;
+  padding-top: 300px;
+}
+
+$offset: -90px;
+$count: 40;
+$duration: 0.3;
+
+@keyframes wave {
+  from {
+    transform: translateY(0);
+    color: white;
+  }
+  to {
+    transform: translateY($offset);
+  }
+}
+
+h1 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+  font-size: 6vw;
+  position: fixed;
+  white-space: nowrap;
+  z-index: 683992;
+
+  span {
+    display: inline-block;
+
+    animation-duration: #{$duration}s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@for $i from 0 to $count {
+  h1 :nth-child(#{$count}n + #{$i}) {
+    animation-delay: -#{($count - $i) * 2 * $duration / $count }s;
+
+    color: rgb(100 + ($i * 20 % 100), 10, 100 + ($i * 40 % 50));
+  }
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+article {
+  position: relative;
+  display: inline-block;
+  font-family: 'VT323', monospace;
+
+  .content {
+    background: white;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    left: 24px;
+    padding: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
