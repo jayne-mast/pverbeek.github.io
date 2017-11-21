@@ -197,7 +197,8 @@ h1 :nth-child(40n + 39) {
   width: 170px;
   margin: 50px auto 0;
   background: linear-gradient(to right, red 0%, yellow 19%, lime 38%, cyan 51%, blue 67%, magenta 83%, red 99%);
-  background-clip: text; }
+  background-clip: text;
+  -webkit-background-clip: text; }
 
 .grid {
   display: grid;
