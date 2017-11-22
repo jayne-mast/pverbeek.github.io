@@ -60,8 +60,16 @@ setInterval(function() {
 
   document.head.appendChild(newIcon);
 
-  // If last image then goto first image
-  // Else go to next image
   if (i == images.length - 1) i = 0;
   else i++;
 }, 200);
+
+// guest book
+const noteElem = document.getElementById('note');
+if (localStorage.getItem('note')) {
+  noteElem.innerText = localStorage.getItem('note');
+}
+
+noteElem.addEventListener('keyup', e => {
+  localStorage.setItem('note', noteElem.innerText);
+});

@@ -172,3 +172,19 @@ small {
   max-width: 500px;
   margin: 12px auto;
 }
+
+#guest-book {
+  background-color: antiquewhite;
+  padding: 10px;
+
+  h3 {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  div {
+    height: calc(100% - 60px);
+    font-family: cursive;
+  }
+}
