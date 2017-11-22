@@ -18,8 +18,8 @@ counterElem.innerHTML = count.padStart(8, '0');
 
 // background color
 document.addEventListener('mousemove', e => {
-  document.body.style.backgroundColor = `hsl(85, ${(e.pageX / 30) % 80 +
-    10}%, ${(e.pageY / 15) % 60 + 20}%)`;
+  document.body.style.backgroundPosition = `${(e.pageX / 30) % 80 +
+    10}px ${(e.pageY / 15) % 60 + 20}px`;
   me;
 
   me.style.left = e.clientX + 10 + 'px';
