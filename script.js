@@ -10,7 +10,7 @@ me.innerHTML = text;
 // visitor counter
 const counterElem = document.getElementById('visitor-counter');
 const count =
-  localStorage.getItem('visitors') || Math.ceil(Math.random() * 15) + 35;
+  localStorage.getItem('visitors') || Math.ceil(Math.random() * 15) + 35 + '';
 
 localStorage.setItem('visitors', +count + Math.ceil(Math.random() * 8));
 
