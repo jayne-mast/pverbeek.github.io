@@ -188,6 +188,11 @@ h1 :nth-child(40n + 39) {
   animation-delay: -0.015s;
   color: #b40a6e; }
 
+.webring {
+  font-family: cursive;
+  color: salmon;
+  text-align: center; }
+
 .epilepsy {
   font-family: 'Rakkas', cursive;
   text-align: center;
