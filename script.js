@@ -7,6 +7,15 @@ const text = me.textContent
 
 me.innerHTML = text;
 
+// visitor counter
+const counterElem = document.getElementById('visitor-counter');
+const count =
+  localStorage.getItem('visitors') || Math.ceil(Math.random() * 15) + 35;
+
+localStorage.setItem('visitors', +count + Math.ceil(Math.random() * 8));
+
+counterElem.innerHTML = count.padStart(8, '0');
+
 // background color
 document.addEventListener('mousemove', e => {
   document.body.style.backgroundColor = `hsl(85, ${(e.pageX / 30) % 80 +

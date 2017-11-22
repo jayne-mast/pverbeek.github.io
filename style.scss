@@ -1,5 +1,7 @@
 body {
-  background: #d6f5ab;
+  background: #d6f5ab url('images/star.gif');
+  background-repeat: space;
+  background-size: 40px;
 }
 
 $offset: -90px;
@@ -131,4 +133,25 @@ marquee {
 
 .ff_now {
   float: right;
+}
+
+.visitors {
+  font-family: 'VT323', monospace;
+  text-align: center;
+}
+
+#visitor-counter {
+  font-size: 24px;
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    ),
+    linear-gradient(to right, white 0px, white 1px, black 1px);
+  display: inline-block;
+  color: white;
+  letter-spacing: 2.3px;
+  padding-left: 2px;
+  background-size: 12px 100%;
 }
