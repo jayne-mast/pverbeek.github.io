@@ -235,18 +235,22 @@ article {
     width: 100%;
     border: solid 5px;
     border-image: radial-gradient(farthest-corner at 40px 40px, #f35 0%, #43e 100%) 20; }
+  article h2 {
+    color: white; }
 
 marquee {
   font-size: 22px;
   margin-top: 40px;
-  font-family: 'VT323', monospace; }
+  font-family: 'VT323', monospace;
+  color: lemonchiffon; }
 
 .ff_now {
   float: right; }
 
 .visitors {
   font-family: 'VT323', monospace;
-  text-align: center; }
+  text-align: center;
+  color: aqua; }
 
 #visitor-counter {
   font-size: 24px;

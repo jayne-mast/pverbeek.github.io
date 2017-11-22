@@ -121,12 +121,17 @@ article {
       )
       20;
   }
+
+  h2 {
+    color: white;
+  }
 }
 
 marquee {
   font-size: 22px;
   margin-top: 40px;
   font-family: 'VT323', monospace;
+  color: lemonchiffon;
 }
 
 .ff_now {
@@ -136,6 +141,7 @@ marquee {
 .visitors {
   font-family: 'VT323', monospace;
   text-align: center;
+  color: aqua;
 }
 
 #visitor-counter {
