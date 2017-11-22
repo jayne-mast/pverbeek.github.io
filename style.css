@@ -195,14 +195,14 @@ h1 :nth-child(40n + 39) {
   font-size: 24px;
   display: block;
   width: 170px;
-  margin: 50px auto 0;
+  margin: 50px auto 180px;
   background: linear-gradient(to right, red 0%, yellow 19%, lime 38%, cyan 51%, blue 67%, magenta 83%, red 99%);
   background-clip: text;
   -webkit-background-clip: text; }
 
 .grid {
   display: grid;
-  margin: 220px 20px 0;
+  margin: 0 20px;
   grid-template-columns: 1fr;
   grid-gap: 10px; }
   @media (min-width: 500px) {
@@ -260,3 +260,6 @@ marquee {
   letter-spacing: 2.3px;
   padding-left: 2px;
   background-size: 12px 100%; }
+
+small {
+  color: greenyellow; }
