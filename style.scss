@@ -168,4 +168,7 @@ marquee {
 
 small {
   color: greenyellow;
+  display: block;
+  max-width: 500px;
+  margin: 12px auto;
 }

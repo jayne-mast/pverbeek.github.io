@@ -267,4 +267,7 @@ marquee {
   background-size: 12px 100%; }
 
 small {
-  color: greenyellow; }
+  color: greenyellow;
+  display: block;
+  max-width: 500px;
+  margin: 12px auto; }
